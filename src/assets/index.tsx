@@ -1,1 +1,1 @@
-export { default as MonogramaMarron } from "./Monograma-Marron.svg";
+export { default as BethelLogo } from "./bethel-logo.png";

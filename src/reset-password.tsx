@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from "react";
 import { useForm } from "react-hook-form";
-import { MonogramaMarron } from "../src/assets";
+import { BethelLogo } from "../src/assets";
 import { Eye, EyeOff, Lock, CheckCircle } from "lucide-react";
 import {
   ResetPasswordContainer,
@@ -54,7 +54,7 @@ const ResetPassword: React.FC = () => {
   });
 
   const handleSubmit = async (
-    data: ResetPasswordRequest & { confirmPassword: string }
+    data: ResetPasswordRequest & { confirmPassword: string },
   ) => {
     if (data.newPassword !== data.confirmPassword) {
       setError("Las contraseñas no coinciden");
@@ -114,7 +114,7 @@ const ResetPassword: React.FC = () => {
         <ResetPasswordCard>
           <LogoSection>
             <LogoIcon>
-              <img src={MonogramaMarron} alt="Logo del Estudio de Pilates" />
+              <img src={BethelLogo} alt="Logo Bethel" />
             </LogoIcon>
             <Title>¡Contraseña Restablecida!</Title>
           </LogoSection>
@@ -136,7 +136,7 @@ const ResetPassword: React.FC = () => {
         <ResetPasswordCard>
           <LogoSection>
             <LogoIcon>
-              <img src={MonogramaMarron} alt="Logo del Estudio de Pilates" />
+              <img src={BethelLogo} alt="Logo Bethel" />
             </LogoIcon>
             <Title>Enlace Inválido</Title>
           </LogoSection>
@@ -154,7 +154,7 @@ const ResetPassword: React.FC = () => {
       <ResetPasswordCard>
         <LogoSection>
           <LogoIcon>
-            <img src={MonogramaMarron} alt="Logo del Estudio de Pilates" />
+            <img src={BethelLogo} alt="Logo Bethel" />
           </LogoIcon>
           <Title>Restablecer Contraseña</Title>
         </LogoSection>
@@ -180,7 +180,7 @@ const ResetPassword: React.FC = () => {
                   pattern: {
                     value: /^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d!@#$%^&*]+$/,
                     message:
-                      "La contraseña debe contener al menos una letra y un número, sin espacios",
+                      "La contraseña debe contener al menos una letra, un número, y solo letras, dígitos y !@#$%^&*",
                   },
                 }}
               />
