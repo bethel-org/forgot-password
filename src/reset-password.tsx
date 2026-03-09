@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from "react";
 import { useForm } from "react-hook-form";
-import { BethelLogo } from "../src/assets";
+import BethelLogo from "@src/assets/bethel-logo.png";
 import { Eye, EyeOff, Lock, CheckCircle } from "lucide-react";
 import {
   ResetPasswordContainer,
@@ -180,7 +180,7 @@ const ResetPassword: React.FC = () => {
                   pattern: {
                     value: /^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d!@#$%^&*]+$/,
                     message:
-                      "La contraseña debe contener al menos una letra, un número, y solo letras, dígitos y !@#$%^&*",
+                      "La contraseña debe contener al menos una letra y un número, sin espacios",
                   },
                 }}
               />
