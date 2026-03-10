@@ -36,7 +36,7 @@ export const LogoSection = styled.div`
 `;
 
 export const LogoIcon = styled.div`
-  width: 70px;
+  width: 300px;
   height: 70px;
 
   img {
